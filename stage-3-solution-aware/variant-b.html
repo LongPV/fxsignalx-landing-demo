@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EA bạn không phải trả tiền — FXSignalx</title>
+<meta name="description" content="Audit thẳng: FXSignalx vs EA truyền thống. Cấu trúc minh bạch, không cherry-picked screenshots.">
+<link rel="stylesheet" href="../_shared/style-variant-b.css">
+</head>
+<body>
+
+<div class="status-bar">
+  <div class="status-inner">
+    <span class="status-item online"><span class="dot"></span> SYSTEM ONLINE</span>
+    <span class="status-item">LICENSE_FEE: $0</span>
+    <span class="status-item">CUSTODY: NON_CUSTODIAL</span>
+    <span class="status-item">SIGNAL_PIPELINE: AI → EXPERT → RISK → BRIDGE</span>
+  </div>
+</div>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="sym">XAUUSD</span> <span class="price">4,486.50</span> <span class="chg up">+0.12%</span></span>
+    <span class="ticker-item"><span class="sym">EURUSD</span> <span class="price">1.16326</span> <span class="chg down">−0.04%</span></span>
+    <span class="ticker-item"><span class="sym">GBPUSD</span> <span class="price">1.34544</span> <span class="chg up">+0.08%</span></span>
+    <span class="ticker-item"><span class="sym">USDJPY</span> <span class="price">159.233</span> <span class="chg up">+0.21%</span></span>
+    <span class="ticker-item"><span class="sym">USDCAD</span> <span class="price">1.38078</span> <span class="chg down">−0.06%</span></span>
+    <span class="ticker-item"><span class="sym">AUDUSD</span> <span class="price">0.71687</span> <span class="chg up">+0.03%</span></span>
+    <span class="ticker-item"><span class="sym">XAUUSD</span> <span class="price">4,486.50</span> <span class="chg up">+0.12%</span></span>
+    <span class="ticker-item"><span class="sym">EURUSD</span> <span class="price">1.16326</span> <span class="chg down">−0.04%</span></span>
+    <span class="ticker-item"><span class="sym">GBPUSD</span> <span class="price">1.34544</span> <span class="chg up">+0.08%</span></span>
+    <span class="ticker-item"><span class="sym">USDJPY</span> <span class="price">159.233</span> <span class="chg up">+0.21%</span></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="dot"></span> FXSignalx</a>
+    <nav class="nav-links">
+      <a href="#compare">Compare</a>
+      <a href="#structure">Cấu trúc</a>
+      <a href="#flags">Audit</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="https://fxsignalx.com/dang-ky" class="btn btn-primary">Thử miễn phí →</a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Cho người đã hoài nghi mọi "bot 200%"</div>
+        <h1>EA nào cũng quảng cáo +200%.<br><span class="accent">Đây là EA bạn không phải trả tiền.</span></h1>
+        <p class="lead">
+          Khi một thứ thật sự tốt, vì sao phải bán $499? Doanh thu FXSignalx đến từ
+          <strong style="color:var(--fg)">hoa hồng IB của broker</strong> — không từ phí license của bạn.
+          Incentive khớp, không lệch.
+        </p>
+        <div class="hero-cta">
+          <a href="https://fxsignalx.com/dang-ky" class="btn btn-primary">Đăng ký miễn phí →</a>
+          <a href="#compare" class="btn btn-secondary">So sánh thẳng</a>
+        </div>
+        <div class="hero-badges">
+          <span>$0 license</span>
+          <span>Có cashback</span>
+          <span>Non-custodial</span>
+        </div>
+      </div>
+      <div>
+        <div class="terminal">
+          <div class="terminal-head">
+            <div class="dots"><span class="live"></span><span></span><span></span></div>
+            <span class="title">audit.compare(fxsignalx, typical_ea)</span>
+          </div>
+          <div class="terminal-body">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.84rem;">
+              <div style="color: var(--fg-muted); margin-bottom: 10px;">// quick_diff:</div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border); font-size: 0.78rem; color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.06em;">
+                <span></span><span class="accent">FXSignalx</span><span>Typical EA</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border);">
+                <span style="color: var(--fg);">license_fee</span><span class="green">$0</span><span class="red">$99–499</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border);">
+                <span style="color: var(--fg);">custody</span><span class="green">broker</span><span class="red">fund_pool</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border);">
+                <span style="color: var(--fg);">cashback</span><span class="green">yes</span><span class="red">no</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border);">
+                <span style="color: var(--fg);">signal_log</span><span class="green">public</span><span class="red">private</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border);">
+                <span style="color: var(--fg);">risk_disclosure</span><span class="green">every_page</span><span class="red">hidden</span>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 12px; padding: 8px 0;">
+                <span style="color: var(--fg);">cancel</span><span class="green">tắt EA</span><span class="red">phí huỷ</span>
+              </div>
+              <div style="margin-top: 14px; font-size: 0.74rem; color: var(--fg-dim);">// $ chmod +x trust.sh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FULL COMPARISON ===================== -->
+<section class="section" id="compare">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// compare.full()</div>
+      <h2>So sánh đầy đủ — <span class="accent">không khoa trương</span></h2>
+      <p>Không "kết quả đẹp". Hãy nhìn vào <em>cấu trúc</em> — thứ mà người bán không thể dựng lên trong 5 phút Photoshop.</p>
+    </div>
+    <div class="compare">
+      <div class="compare-row head">
+        <div>// criterion</div>
+        <div class="ours">// FXSignalx</div>
+        <div>// EA / Signal trả phí</div>
+      </div>
+      <div class="compare-row"><div class="compare-cell feature">Phí license</div><div class="compare-cell ours"><span class="check">✓</span> $0 — miễn phí 100%</div><div class="compare-cell them">$99 – $499/tháng</div></div>
+      <div class="compare-row"><div class="compare-cell feature">Mô hình doanh thu</div><div class="compare-cell ours"><span class="check">✓</span> IB từ broker</div><div class="compare-cell them">Phí từ bạn</div></div>
+      <div class="compare-row"><div class="compare-cell feature">Custody</div><div class="compare-cell ours"><span class="check">✓</span> Broker của bạn</div><div class="compare-cell them">Một số yêu cầu "fund chung"</div></div>
+      <div class="compare-row"><div class="compare-cell feature">Cashback</div><div class="compare-cell ours"><span class="check">✓</span> Có — chia lại từ IB</div><div class="compare-cell them">Hiếm</div></div>
+      <div class="compare-row"><div class="compare-cell feature">Signal pipeline</div><div class="compare-cell ours"><span class="check">✓</span> AI → Expert → Risk → Bridge</div><div class="compare-cell them">Black box</div></div>
+      <div class="compare-row"><div class="compare-cell feature">Risk disclosure</div><div class="compare-cell ours"><span class="check">✓</span> Trên mọi trang</div><div class="compare-cell them">Thường giấu</div></div>
+      <div class="compare-row"><div class="compare-cell feature">Dừng / huỷ</div><div class="compare-cell ours"><span class="check">✓</span> Tắt EA, không phí</div><div class="compare-cell them">Khó / mất phí</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MONEY FLOW ===================== -->
+<section class="section" id="structure">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// money_flow.diagram()</div>
+      <h2>Tiền của bạn <span class="accent">không chạy qua chúng tôi</span></h2>
+      <p>Dòng tiền thật, đơn giản, có thể kiểm chứng với broker đối tác.</p>
+    </div>
+    <div class="chart-card">
+      <div style="display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 20px; align-items: center; text-align: center; padding: 20px 0;">
+        <div>
+          <div style="width: 70px; height: 70px; margin: 0 auto 12px; border-radius: var(--radius-sm); background: var(--bg); border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">👤</div>
+          <div class="mono" style="font-size: 0.85rem; color: var(--fg); font-weight: 600;">YOU</div>
+          <div class="mono" style="font-size: 0.74rem; color: var(--fg-muted); margin-top: 4px;">deposit / withdraw</div>
+        </div>
+        <div class="mono" style="color: var(--gold); font-size: 1.2rem;">───►</div>
+        <div>
+          <div style="width: 70px; height: 70px; margin: 0 auto 12px; border-radius: var(--radius-sm); background: var(--bg); border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">🏦</div>
+          <div class="mono" style="font-size: 0.85rem; color: var(--fg); font-weight: 600;">BROKER</div>
+          <div class="mono" style="font-size: 0.74rem; color: var(--fg-muted); margin-top: 4px;">holds funds + executes</div>
+        </div>
+        <div class="mono" style="color: var(--gold); font-size: 1.2rem;">───►</div>
+        <div>
+          <div style="width: 70px; height: 70px; margin: 0 auto 12px; border-radius: var(--radius-sm); background: var(--bg); border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; font-size: 1.6rem;">⚙</div>
+          <div class="mono" style="font-size: 0.85rem; color: var(--fg); font-weight: 600;">FXSignalx</div>
+          <div class="mono" style="font-size: 0.74rem; color: var(--fg-muted); margin-top: 4px;">IB commission only</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div style="text-align: center;">
+        <p style="color: var(--fg); margin-bottom: 8px;">Broker trả hoa hồng IB cho FXSignalx <em>theo khối lượng lệnh</em> — không phụ thuộc lãi/lỗ của bạn.</p>
+        <p style="font-size: 0.92rem;">Một phần được chia lại cho bạn dưới dạng <strong class="green">cashback</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PIPELINE ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// signal.pipeline()</div>
+      <h2>Tín hiệu đi qua <span class="accent">4 lớp lọc</span></h2>
+      <p>Không phải một mô hình duy nhất. Không phải "thuật toán bí mật".</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="card"><div class="icon">AI</div><h3>1. AI Engine</h3><p>Đa mô hình AI phân tích song song — giá, volume, sentiment, vĩ mô.</p><span class="tag">objective</span></div>
+      <div class="card"><div class="icon">EX</div><h3>2. Expert Review</h3><p>Mỗi candidate qua chuyên gia review bối cảnh thực tế trước khi phát.</p><span class="tag">human</span></div>
+      <div class="card"><div class="icon">⌖</div><h3>3. Risk Filter</h3><p>Mỗi lệnh đi kèm SL/TP. Từ chối khi điều kiện không đủ chuẩn.</p><span class="tag">guard</span></div>
+      <div class="card"><div class="icon">→</div><h3>4. Bridge MT5</h3><p>Lệnh đẩy về EA của tất cả thành viên, độ trễ &lt;50ms.</p><span class="tag">&lt;50ms</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RED FLAGS ===================== -->
+<section class="section" id="flags">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// scam_pattern.detect()</div>
+      <h2>5 red flags — và FXSignalx khác như thế nào</h2>
+      <p>Nếu bạn đã bị burn, danh sách này có thể đau lòng đến quen thuộc. Dùng nó để so chúng tôi — không phải để tin chúng tôi.</p>
+    </div>
+    <div class="grid" style="gap: 12px;">
+      <div class="card" style="display: grid; grid-template-columns: 24px 1fr 1fr; gap: 18px; align-items: start;">
+        <div class="red mono" style="font-size: 1.2rem; font-weight: 700;">×</div>
+        <div>
+          <h3 style="margin-bottom: 6px;">"+200%/tháng đảm bảo"</h3>
+          <p>Cherry-picked screenshots, demo account, hoặc lịch sử lệnh bị chỉnh.</p>
+        </div>
+        <div style="border-left: 2px solid var(--green); padding-left: 16px;">
+          <div class="mono" style="font-size: 0.74rem; color: var(--green); text-transform: uppercase; margin-bottom: 4px;">FXSignalx</div>
+          <p>Win rate <strong class="accent">41.9%</strong> lịch sử* — không cam kết tương lai. Số liệu công khai realtime.</p>
+        </div>
+      </div>
+      <div class="card" style="display: grid; grid-template-columns: 24px 1fr 1fr; gap: 18px; align-items: start;">
+        <div class="red mono" style="font-size: 1.2rem; font-weight: 700;">×</div>
+        <div>
+          <h3 style="margin-bottom: 6px;">"Nạp vào fund chung"</h3>
+          <p>Khi tiền rời broker chính thức, bạn mất quyền kiểm soát.</p>
+        </div>
+        <div style="border-left: 2px solid var(--green); padding-left: 16px;">
+          <div class="mono" style="font-size: 0.74rem; color: var(--green); text-transform: uppercase; margin-bottom: 4px;">FXSignalx</div>
+          <p>Tiền tại <strong>broker được cấp phép</strong>. Non-custodial. Không "fund", không "ví".</p>
+        </div>
+      </div>
+      <div class="card" style="display: grid; grid-template-columns: 24px 1fr 1fr; gap: 18px; align-items: start;">
+        <div class="red mono" style="font-size: 1.2rem; font-weight: 700;">×</div>
+        <div>
+          <h3 style="margin-bottom: 6px;">"Không broker chính thức"</h3>
+          <p>EA chạy trên platform tự tạo hoặc demo. Tiền không bao giờ được giao dịch thật.</p>
+        </div>
+        <div style="border-left: 2px solid var(--green); padding-left: 16px;">
+          <div class="mono" style="font-size: 0.74rem; color: var(--green); text-transform: uppercase; margin-bottom: 4px;">FXSignalx</div>
+          <p>Chỉ chạy trên <strong>MetaTrader 5</strong> + broker được cấp phép.</p>
+        </div>
+      </div>
+      <div class="card" style="display: grid; grid-template-columns: 24px 1fr 1fr; gap: 18px; align-items: start;">
+        <div class="red mono" style="font-size: 1.2rem; font-weight: 700;">×</div>
+        <div>
+          <h3 style="margin-bottom: 6px;">"Master Account giấu"</h3>
+          <p>Không có tài khoản gốc công khai. Tín hiệu có thể "phát ngược" sau khi đã xong.</p>
+        </div>
+        <div style="border-left: 2px solid var(--green); padding-left: 16px;">
+          <div class="mono" style="font-size: 0.74rem; color: var(--green); text-transform: uppercase; margin-bottom: 4px;">FXSignalx</div>
+          <p>Có <strong>Master Signals</strong> — log realtime hiển thị thời điểm phát.</p>
+        </div>
+      </div>
+      <div class="card" style="display: grid; grid-template-columns: 24px 1fr 1fr; gap: 18px; align-items: start;">
+        <div class="red mono" style="font-size: 1.2rem; font-weight: 700;">×</div>
+        <div>
+          <h3 style="margin-bottom: 6px;">"Không cảnh báo rủi ro"</h3>
+          <p>Chỉ "trader đã đổi đời". Không một dòng nào về mất vốn.</p>
+        </div>
+        <div style="border-left: 2px solid var(--green); padding-left: 16px;">
+          <div class="mono" style="font-size: 0.74rem; color: var(--green); text-transform: uppercase; margin-bottom: 4px;">FXSignalx</div>
+          <p>Cảnh báo rủi ro <strong>trên mọi trang</strong>. Tuyên bố rõ về khả năng mất toàn bộ vốn.</p>
+        </div>
+      </div>
+    </div>
+    <p class="muted" style="font-size: 0.82rem; margin-top: 18px; font-family: 'JetBrains Mono', monospace;">* Win rate là số liệu lịch sử — không đảm bảo tương lai.</p>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><div class="stat-label"><span class="dot"></span> LICENSE_FEE</div><div class="stat-num">$0</div><div class="stat-sub">Không phí ẩn</div></div>
+      <div class="stat"><div class="stat-label"><span class="dot"></span> WIN_RATE_HIST</div><div class="stat-num">41.9%</div><div class="stat-sub">Lịch sử*</div></div>
+      <div class="stat"><div class="stat-label"><span class="dot"></span> ORDERS_TOTAL</div><div class="stat-num">1.643</div><div class="stat-sub">Tích luỹ</div></div>
+      <div class="stat"><div class="stat-label"><span class="dot"></span> ACCOUNTS</div><div class="stat-num">11</div><div class="stat-sub">Kết nối</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="container" style="max-width: 800px;">
+    <div class="section-head">
+      <div class="label">// faq.honest()</div>
+      <h2>Hỏi thẳng</h2>
+    </div>
+    <details class="faq-item">
+      <summary>Vì sao miễn phí mà không phải scam?</summary>
+      <p>Doanh thu của chúng tôi đến từ hoa hồng IB của broker — không phụ thuộc lãi/lỗ của bạn. Đây là mô hình IB chuẩn của ngành.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Tiền của tôi có an toàn không?</summary>
+      <p>Tiền nằm tại broker — không qua FXSignalx. Bạn nạp/rút trực tiếp với broker. Chúng tôi chỉ phát tín hiệu.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Tôi có thể dùng broker khác không?</summary>
+      <p>EA hỗ trợ MT5. Để được cashback, cần dùng broker đối tác — danh sách hiển thị sau khi đăng ký.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Tôi muốn dừng — có dễ không?</summary>
+      <p>Tắt EA, đóng các lệnh đang mở (nếu muốn), rút tiền với broker. Không phí huỷ.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="label" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 14px;">// try.now()</div>
+      <h2>Thử FXSignalx miễn phí<br><span class="accent">bạn không mất gì để thử.</span></h2>
+      <p>Đăng ký mất 2 phút. Chưa cần nạp tiền. Cài EA xong rồi mới quyết định nạp vào broker hay không.</p>
+      <div class="hero-cta" style="justify-content: center;">
+        <a href="https://fxsignalx.com/dang-ky" class="btn btn-primary">Đăng ký miễn phí →</a>
+        <a href="https://fxsignalx.com/cach-hoat-dong" class="btn btn-secondary">Đọc thêm</a>
+      </div>
+      <p class="cta-disclaimer">Giao dịch có rủi ro cao, có thể mất toàn bộ vốn. Hiệu quả quá khứ không đảm bảo tương lai.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-risk">
+      <strong>// RISK_DISCLOSURE</strong>
+      Giao dịch ngoại hối, vàng, CFD và các sản phẩm có đòn bẩy mang rủi ro cao, có thể dẫn đến mất toàn bộ vốn.
+      FXSignalx KHÔNG phải sàn môi giới, KHÔNG quản lý tiền, KHÔNG tư vấn đầu tư.
+      <a href="https://fxsignalx.com/canh-bao-rui-ro">→ Xem chi tiết</a>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="dot"></span> FXSignalx.Com</div>
+        <p>Nền tảng phần mềm hỗ trợ giao dịch tự động cho MetaTrader 5.</p>
+      </div>
+      <div class="footer-col"><h4>Sản phẩm</h4><a href="https://fxsignalx.com/dang-ky">Đăng ký</a><a href="https://fxsignalx.com/ea-bot">EA Bot</a></div>
+      <div class="footer-col"><h4>Hướng dẫn</h4><a href="https://fxsignalx.com/cai-dat">Cài đặt</a><a href="https://fxsignalx.com/faq">FAQ</a></div>
+      <div class="footer-col"><h4>Pháp lý</h4><a href="https://fxsignalx.com/dieu-khoan">Điều khoản</a><a href="https://fxsignalx.com/canh-bao-rui-ro">Rủi ro</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 FXSignalx.Com</span><span>10 online · 85/24h</span></div>
+  </div>
+</footer>
+
+</body>
+</html>

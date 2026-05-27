@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiền của bạn đang ngủ. Thị trường thì không. — FXSignalx</title>
+<meta name="description" content="EA Bot miễn phí cho MetaTrader 5. Tự động giao dịch 24/5 — thị trường đang chạy ngay lúc này.">
+<link rel="stylesheet" href="../_shared/style-variant-b.css">
+</head>
+<body>
+
+<!-- ===================== STATUS BAR ===================== -->
+<div class="status-bar">
+  <div class="status-inner">
+    <span class="status-item online"><span class="dot"></span> SYSTEM ONLINE</span>
+    <span class="status-item">10 ACCOUNTS · 0 OPEN · 85/24H</span>
+    <span class="status-item">BRIDGE LATENCY &lt;50ms</span>
+    <span class="status-item">SIGNAL ENGINE · EXPERT REVIEW · RISK FILTER</span>
+  </div>
+</div>
+
+<!-- ===================== TICKER ===================== -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="sym">XAUUSD</span> <span class="price">4,486.50</span> <span class="chg up">+0.12%</span></span>
+    <span class="ticker-item"><span class="sym">EURUSD</span> <span class="price">1.16326</span> <span class="chg down">−0.04%</span></span>
+    <span class="ticker-item"><span class="sym">GBPUSD</span> <span class="price">1.34544</span> <span class="chg up">+0.08%</span></span>
+    <span class="ticker-item"><span class="sym">USDJPY</span> <span class="price">159.233</span> <span class="chg up">+0.21%</span></span>
+    <span class="ticker-item"><span class="sym">USDCAD</span> <span class="price">1.38078</span> <span class="chg down">−0.06%</span></span>
+    <span class="ticker-item"><span class="sym">AUDUSD</span> <span class="price">0.71687</span> <span class="chg up">+0.03%</span></span>
+    <span class="ticker-item"><span class="sym">USDCHF</span> <span class="price">0.78543</span> <span class="chg down">−0.02%</span></span>
+    <span class="ticker-item"><span class="sym">NZDUSD</span> <span class="price">0.58407</span> <span class="chg up">+0.05%</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item"><span class="sym">XAUUSD</span> <span class="price">4,486.50</span> <span class="chg up">+0.12%</span></span>
+    <span class="ticker-item"><span class="sym">EURUSD</span> <span class="price">1.16326</span> <span class="chg down">−0.04%</span></span>
+    <span class="ticker-item"><span class="sym">GBPUSD</span> <span class="price">1.34544</span> <span class="chg up">+0.08%</span></span>
+    <span class="ticker-item"><span class="sym">USDJPY</span> <span class="price">159.233</span> <span class="chg up">+0.21%</span></span>
+    <span class="ticker-item"><span class="sym">USDCAD</span> <span class="price">1.38078</span> <span class="chg down">−0.06%</span></span>
+    <span class="ticker-item"><span class="sym">AUDUSD</span> <span class="price">0.71687</span> <span class="chg up">+0.03%</span></span>
+    <span class="ticker-item"><span class="sym">USDCHF</span> <span class="price">0.78543</span> <span class="chg down">−0.02%</span></span>
+    <span class="ticker-item"><span class="sym">NZDUSD</span> <span class="price">0.58407</span> <span class="chg up">+0.05%</span></span>
+  </div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="dot"></span> FXSignalx</a>
+    <nav class="nav-links">
+      <a href="#how">Cách hoạt động</a>
+      <a href="#proof">Số liệu live</a>
+      <a href="#why-free">Vì sao miễn phí</a>
+    </nav>
+    <a href="https://fxsignalx.com/dang-ky" class="btn btn-primary">Bắt đầu →</a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">EA Bot v1.9 · Miễn phí 100%</div>
+        <h1>Tiền của bạn đang ngủ.<br><span class="accent">Thị trường thì không.</span></h1>
+        <p class="lead">
+          Khi bạn đọc câu này, EA của 10 người đang giao dịch trên MetaTrader 5.
+          85 lệnh đã chạy trong 24 giờ qua. Bridge MT5 trễ &lt;50ms. Đây không phải lý thuyết — đây là dữ liệu.
+        </p>
+        <div class="hero-cta">
+          <a href="https://fxsignalx.com/dang-ky" class="btn btn-primary">Bắt đầu miễn phí →</a>
+          <a href="#proof" class="btn btn-secondary">Xem dữ liệu live</a>
+        </div>
+        <div class="hero-badges">
+          <span>Miễn phí 100%</span>
+          <span>Có cashback</span>
+          <span>Không quản lý vốn</span>
+          <span>24/5</span>
+        </div>
+      </div>
+      <div>
+        <div class="terminal">
+          <div class="terminal-head">
+            <div class="dots"><span class="live"></span><span></span><span></span></div>
+            <span class="title">signal_engine.log · LIVE</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-row">
+              <span class="time">12:37</span>
+              <span><span class="sym">XAUUSDc</span> <span class="side buy">BUY 0.20</span></span>
+              <span class="acct">***6252</span>
+              <span class="status">✓ Filled</span>
+            </div>
+            <div class="terminal-row">
+              <span class="time">12:37</span>
+              <span><span class="sym">XAUUSDc</span> <span class="side buy">BUY 0.07</span></span>
+              <span class="acct">***8589</span>
+              <span class="status">✓ Filled</span>
+            </div>
+            <div class="terminal-row">
+              <span class="time">12:37</span>
+              <span><span class="sym">XAUUSDc</span> <span class="side buy">BUY 0.07</span></span>
+              <span class="acct">***8235</span>
+              <span class="status">✓ Filled</span>
+            </div>
+            <div class="terminal-row">
+              <span class="time">12:37</span>
+              <span><span class="sym">XAUUSDc</span> <span class="side buy">BUY 0.20</span></span>
+              <span class="acct">***1276</span>
+              <span class="status">✓ Filled</span>
+            </div>
+            <div class="terminal-row">
+              <span class="time">12:36</span>
+              <span><span class="sym">EURUSDc</span> <span class="side sell">SELL 0.10</span></span>
+              <span class="acct">***8589</span>
+              <span class="status">✓ Filled</span>
+            </div>
+            <div class="terminal-row">
+              <span class="time">12:35</span>
+              <span><span class="sym">XAUUSDc</span> <span class="side buy">BUY 0.07</span></span>
+              <span class="acct">***6252</span>
+              <span class="status">✓ Filled</span>
+            </div>
+            <div style="margin-top: 12px; font-size: 0.74rem; color: var(--fg-dim);">// Dữ liệu tài khoản cá nhân được ẩn để bảo mật</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WORLD CLOCK ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="label">// world_sessions.now()</div>
+      <h2>Thị trường <span class="accent">không bao giờ</span> đóng cửa</h2>
+      <p>Tokyo bàn giao London. London bàn giao New York. Vòng lặp 24/5 — chỉ cuối tuần mới nghỉ.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon">⏱</div>
+        <h3>Phiên Á · Tokyo</h3>
+        <p class="mono" style="color: var(--gold); font-size: 0.85rem; margin-bottom: 8px;">06:00 → 15:00 ICT</p>
+        <p>Vàng và Yên thường biến động khi tin Nhật, Trung mở cửa.</p>
+        <span class="tag">ACTIVE</span>
+      </div>
+      <div class="card">
+        <div class="icon">⏱</div>
+        <h3>Phiên Âu · London</h3>
+        <p class="mono" style="color: var(--gold); font-size: 0.85rem; margin-bottom: 8px;">14:00 → 23:00 ICT</p>
+        <p>Khối lượng giao dịch lớn nhất ngày. EUR/GBP sôi động ở đây.</p>
+        <span class="tag">PEAK</span>
+      </div>
+      <div class="card">
+        <div class="icon">⏱</div>
+        <h3>Phiên Mỹ · New York</h3>
+        <p class="mono" style="color: var(--gold); font-size: 0.85rem; margin-bottom: 8px;">19:30 → 04:30 ICT</p>
+        <p>Tin FED, NFP. Vàng và USD thường có cú "giật" lớn nhất phiên này.</p>
+        <span class="tag">VOLATILE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT IS EA ===================== -->
+<section class="section" id="how" style="padding-top: 30px;">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// ea_bot.explain(60s)</div>
+      <h2>EA Bot là gì?</h2>
+      <p>Trong 60 giây, không jargon, không phải khoá học.</p>
+    </div>
+    <div class="grid grid-2" style="align-items: stretch;">
+      <div>
+        <p style="color: var(--fg); font-size: 1.08rem; line-height: 1.7; margin-bottom: 16px;">
+          <strong class="accent">EA Bot</strong> = Expert Advisor — phần mềm nhỏ gắn vào
+          <strong>MetaTrader 5</strong> (sàn giao dịch chính thức của các broker forex quốc tế).
+        </p>
+        <p style="line-height: 1.7; margin-bottom: 16px;">
+          Khi hệ thống có tín hiệu (AI phân tích + chuyên gia xác nhận), EA tự đặt lệnh mua/bán
+          <em>thay bạn</em> — đúng khối lượng bạn cài, đúng SL/TP đã tính sẵn.
+        </p>
+        <p style="line-height: 1.7;">
+          Bạn không cần biết phân tích kỹ thuật. Không cần thức đêm. Bạn vẫn toàn quyền:
+          tắt EA bất cứ lúc nào, đóng lệnh thủ công, rút tiền trực tiếp với broker.
+        </p>
+      </div>
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">Equity curve · demo</div>
+            <div class="chart-value">+22.2K <span class="delta">+8.4% MTD</span></div>
+          </div>
+          <div class="mono" style="font-size: 0.74rem; color: var(--fg-dim);">// historical · 30d</div>
+        </div>
+        <svg class="chart-svg" viewBox="0 0 400 140" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="eq-grad" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#00C896" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#00C896" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,110 L25,108 L50,102 L75,105 L100,95 L125,88 L150,92 L175,82 L200,78 L225,72 L250,66 L275,70 L300,58 L325,52 L350,48 L375,42 L400,35 L400,140 L0,140 Z" fill="url(#eq-grad)"/>
+          <path d="M0,110 L25,108 L50,102 L75,105 L100,95 L125,88 L150,92 L175,82 L200,78 L225,72 L250,66 L275,70 L300,58 L325,52 L350,48 L375,42 L400,35" stroke="#00C896" stroke-width="2" fill="none"/>
+        </svg>
+        <div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--fg-dim); margin-top: 8px;">
+          <span>D-30</span><span>D-20</span><span>D-10</span><span>NOW</span>
+        </div>
+        <p style="font-size: 0.78rem; color: var(--fg-dim); margin-top: 14px;">* Tổng hợp hệ thống, không phản ánh KQ cá nhân. Kết quả quá khứ — không đảm bảo tương lai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3 STEPS ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// onboarding.steps</div>
+      <h2>3 bước. Không có bước thứ 4.</h2>
+      <p>Không cần code, không cần thuê chuyên gia, không cần khoá học.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">STEP 01</div>
+        <h3>Đăng ký miễn phí</h3>
+        <p>Tạo tài khoản FXSignalx, cung cấp số tài khoản MT5. Admin xét duyệt trong thời gian ngắn.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 02</div>
+        <h3>Tải & cài EA</h3>
+        <p>Tải file .ex5 từ trang Member, kéo vào MT5. EA tự kết nối — không cấu hình phức tạp.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 03</div>
+        <h3>Cài rủi ro & bật</h3>
+        <p>Chọn lot size, max drawdown, dừng lỗ tổng phù hợp tài chính. EA chỉ chạy khi bạn cho phép.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LIVE PROOF ===================== -->
+<section class="section" id="proof">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// stats_api · refresh 30s</div>
+      <h2>Đây là <span class="accent">dữ liệu</span>, không phải quảng cáo</h2>
+      <p>Số liệu tổng hợp toàn hệ thống — dữ liệu tài khoản cá nhân ẩn để bảo mật. Hiệu quả quá khứ không đảm bảo tương lai.</p>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label"><span class="dot"></span> ACCOUNTS_ONLINE</div>
+        <div class="stat-num">10<span style="color: var(--fg-dim); font-size: 0.6em;"> / 11</span></div>
+        <div class="stat-sub">Đang kết nối realtime</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label"><span class="dot"></span> ORDERS_24H</div>
+        <div class="stat-num">85</div>
+        <div class="stat-sub">Lệnh xử lý trong 24h</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label"><span class="dot"></span> ORDERS_TOTAL</div>
+        <div class="stat-num">1.643</div>
+        <div class="stat-sub">Lệnh tích luỹ lịch sử</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label"><span class="dot"></span> BRIDGE_LATENCY</div>
+        <div class="stat-num">&lt;50<span style="font-size: 0.55em; color: var(--fg-muted);">ms</span></div>
+        <div class="stat-sub">Asia-Pacific node</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY FREE ===================== -->
+<section class="section" id="why-free">
+  <div class="container">
+    <div class="section-head">
+      <div class="label">// business_model.transparency</div>
+      <h2>Vì sao chúng tôi <span class="accent">miễn phí</span>?</h2>
+      <p>Nếu một thứ miễn phí mà không giải thích được tại sao, hãy nghi ngờ. Đây là tại sao.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="icon">$</div>
+        <h3>Doanh thu IB từ broker</h3>
+        <p>Khi bạn giao dịch qua broker đối tác, broker trả hoa hồng IB cho FXSignalx theo khối lượng — không phụ thuộc lãi/lỗ của bạn. Bạn không trả phí license, không phí ẩn.</p>
+        <span class="tag">verified · transparent</span>
+      </div>
+      <div class="card">
+        <div class="icon">↺</div>
+        <h3>Bạn còn được hoàn lại</h3>
+        <p>Một phần hoa hồng IB được chia lại cho bạn dưới dạng <strong style="color:var(--green);">cashback</strong> — hiển thị minh bạch trong Member Dashboard, rút về tài khoản broker.</p>
+        <span class="tag">your_share</span>
+      </div>
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Tiền ở broker, không ở chúng tôi</h3>
+        <p>FXSignalx KHÔNG quản lý vốn. Bạn nạp/rút trực tiếp với broker. Chúng tôi chỉ phát tín hiệu — bạn (và EA của bạn) ra lệnh.</p>
+        <span class="tag">non_custodial</span>
+      </div>
+      <div class="card">
+        <div class="icon">⎋</div>
+        <h3>Tắt bất cứ lúc nào</h3>
+        <p>Tắt EA, đóng vị thế, rút tiền — tất cả trong tay bạn. Không hợp đồng ràng buộc, không phí huỷ, không khoá hạn.</p>
+        <span class="tag">no_lock_in</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="label" style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 14px;">// ready.to_start()</div>
+      <h2>Cho thị trường một cơ hội<br><span class="accent">làm quen với bạn.</span></h2>
+      <p>Đăng ký mất 2 phút. Chưa cần nạp tiền. Bạn có thể xem dashboard, đọc hướng dẫn, dừng bất cứ lúc nào.</p>
+      <div class="hero-cta" style="justify-content: center;">
+        <a href="https://fxsignalx.com/dang-ky" class="btn btn-primary">Đăng ký miễn phí →</a>
+        <a href="https://fxsignalx.com/cach-hoat-dong" class="btn btn-secondary">Đọc thêm trước</a>
+      </div>
+      <p class="cta-disclaimer">
+        Sử dụng phần mềm đồng nghĩa bạn đã đọc Điều khoản, Cảnh báo rủi ro và Tuyên bố miễn trừ trách nhiệm.
+        Giao dịch có rủi ro cao, có thể mất toàn bộ vốn.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-risk">
+      <strong>// RISK_DISCLOSURE</strong>
+      Giao dịch ngoại hối, vàng, CFD và các sản phẩm có đòn bẩy mang rủi ro cao, có thể dẫn đến mất toàn bộ vốn.
+      Hiệu quả quá khứ không đảm bảo tương lai. FXSignalx cung cấp công cụ phần mềm miễn phí — doanh thu từ hoa hồng IB
+      do broker đối tác chia lại. Chúng tôi KHÔNG phải sàn môi giới, KHÔNG quản lý tiền, KHÔNG tư vấn đầu tư.
+      <a href="https://fxsignalx.com/canh-bao-rui-ro">→ Xem chi tiết cảnh báo rủi ro</a>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="dot"></span> FXSignalx.Com</div>
+        <p>Nền tảng phần mềm hỗ trợ giao dịch tự động cho MetaTrader 5. Công cụ kỹ thuật, không phải dịch vụ tư vấn đầu tư.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Sản phẩm</h4>
+        <a href="https://fxsignalx.com/dang-ky">Đăng ký dùng thử</a>
+        <a href="https://fxsignalx.com/ea-bot">Tải EA Bot</a>
+        <a href="https://fxsignalx.com/member">Member Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hướng dẫn</h4>
+        <a href="https://fxsignalx.com/cai-dat">Cài đặt EA Bot</a>
+        <a href="https://fxsignalx.com/faq">Câu hỏi thường gặp</a>
+        <a href="https://fxsignalx.com/tin-tuc">Tin tức vĩ mô</a>
+      </div>
+      <div class="footer-col">
+        <h4>Pháp lý</h4>
+        <a href="https://fxsignalx.com/dieu-khoan">Điều khoản</a>
+        <a href="https://fxsignalx.com/bao-mat">Bảo mật</a>
+        <a href="https://fxsignalx.com/canh-bao-rui-ro">Cảnh báo rủi ro</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FXSignalx.Com</span>
+      <span>10 online · 0 open · 85/24h · &lt;50ms</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
