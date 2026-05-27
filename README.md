@@ -7,7 +7,7 @@ Live preview: https://longpv.github.io/fxsignalx-landing-demo/
 ## Cấu trúc
 
 ```
-_shared/                       # CSS dùng chung
+shared/                       # CSS dùng chung
 stage-1-unaware/               # variant-a.html, variant-b.html
 stage-2-problem-aware/
 stage-3-solution-aware/
